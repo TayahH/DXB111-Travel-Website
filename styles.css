@@ -16,7 +16,6 @@ Orange: #ffa600
 Orange Hover: #ffa835 */
 
 :root {
-    /* --primary-bg-color: #aed8e5; */
     --primary-bg-color: #364a5a;
     --secondary-bg-color: #f0f5f7;
     --accent-color: #faa356;  
@@ -52,12 +51,16 @@ figcaption{
     font-style: italic;
 }
 
+article{
+    width: 100%;
+    padding: 15px 0px;
+}
+
 /* === NAVIGATION STYLES === */
 header nav {
     color: white;
     text-align: center;
     background-color: var(--primary-bg-color);
-    padding-top: 10px;
 }
 
 header nav h1{
@@ -82,8 +85,41 @@ header nav a:hover, header nav a.active{
     color: var(--accent-color);
 }
 
-/* BREADCRUMBS */
+#nav-heading{
+    display: flex;
+}
 
+#logo{
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+.flyout-panel-hidden {
+    display: none;
+}
+  
+.flyout-panel-visible{
+    display: block
+}
+
+/* BUTTON STYLING */
+button {
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary-bg-color);
+    border-color: var(--primary-bg-color);
+}
+
+button:hover{
+    color: var(--accent-color);
+}
+
+/* BREADCRUMBS STYLING */
 .breadcrumb{
     background-image: url("images/narrow-hero-image.jpg");
     background-size: cover;
@@ -93,7 +129,6 @@ header nav a:hover, header nav a.active{
 .breadcrumb ul{
     display: flex;
     justify-content: flex-start;
-    align-items: left;
     font-size: 1rem;
 }
 
@@ -200,7 +235,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-/* Landing Information Card*/
+/* Landing Information Card */
 .information-card {
     list-style: none;
     margin-top: 15%;
@@ -335,7 +370,7 @@ input[type=submit]:hover {
 }
 
 #about h1{
-    text-align: center;
+    text-align: left;
     font-size: 2.1rem;
     font-family: 'Muli', sans-serif;
     line-height: 2em;
@@ -343,12 +378,8 @@ input[type=submit]:hover {
 
 #about h2{
     font-size: 1.4rem;
-    text-align: center;
+    text-align: left;
     padding: 5px 0px;
-}
-
-#about p{
-    text-align: center;
 }
 
 #about-map{
@@ -359,6 +390,20 @@ input[type=submit]:hover {
 .about-col{
     width: 100%;
 }
+
+.references{
+    font-style: italic;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.references li::before {
+    content: "-";
+    color: var(--primary-font-color);
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
 
 /* === CATEGORY PAGE STYLES === */
 #category{
@@ -376,24 +421,9 @@ input[type=submit]:hover {
     font-size: 1.2rem;
 }
 
-.category-col{
-    width: 100%;
-}
-
-#category-img-above, #category-img-below{
+#category section img{
     width: 100%;
     height: auto;
-    padding: 30px 0px;
-}
-
-#category-img{
-    width: 100%;
-    height: auto;
-    padding-top: 30px;
-}
-
-#category-img-above{
-    display: none;
 }
 
 
@@ -419,7 +449,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-#location {
+#destination-details {
     background-color: var(--secondary-bg-color);
     border-radius: 3px;
     display: flex;
@@ -432,24 +462,25 @@ input[type=submit]:hover {
     padding: 10px;
 }
 
-#location p{
+#destination-details p{
     text-align: center;
     padding-bottom: 10px;
 }
 
-.location-col{
-    width: 100%;
-}
-
-#location-img{
+#destination-details img{
     width: 100%;
     height: auto;
 }
 
-#directions h2, #directions p{
+#activities h2, #activities p{
     text-align: center;
 }
 
+#gallery-slideshow section img{
+    padding: 5px 0px;
+    height: auto;
+    width: 90vw;
+}
 
 /* === RESPONSIVE SCREEN STYLES === */
 /* IPAD */
@@ -458,7 +489,22 @@ input[type=submit]:hover {
         display: inline-block;
         padding: 0px 15px; 
     }
+
+    #flyout-panel {
+        display: block;
+    }
+    #menu-button {
+        display: none;
+    }
+
+    #logo{
+        display: block;
+    }
     
+    #nav-heading{
+        display: block;
+    }
+
     .footer-column{
         width: 32%;
         text-align: left;
@@ -497,20 +543,30 @@ input[type=submit]:hover {
         padding: 0px 40px;
     }
 
-    #destination h2, #location p, #directions h2, #directions p{
+    #destination h2, #destination-details p, #activities h2, #activities p{
         text-align: left;
     }
 
-    #directions{
-        padding-left: 8px;
+    #gallery-slideshow section img{
+        padding: 0px 5px;
+        height: 150px;
+        width: auto;
+    }
+    
+    #gallery-slideshow section{
+        width: 100%;
+        display: flex;
     }
 
+    #gallery-slideshow section a:last-child{
+        display: none;
+    }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1440px){
-    section{
-        padding: 0px 15px;
+    #category section{
+        padding-right:10px;
     }
 
     nav {
@@ -529,6 +585,17 @@ input[type=submit]:hover {
     nav li {
         display: block;     
         padding: 0px 15px; 
+    }
+
+    #logo{
+        padding: 0px;
+    }
+
+    #flyout-panel {
+        display: flex;
+    }
+    #menu-button {
+        display: none;
     }
 
     .footer-column{
@@ -599,72 +666,85 @@ input[type=submit]:hover {
 
     #about p{
         text-align: left;
-        padding: 15px 0px;
-    }
-
-    #about{
-        display: inline-flex;
-        padding: 20px;
+        padding: 10px 0px;
     }
 
     #category{
-        padding: 20px;
-    }
-
-    .category-row, .location-row{
-        display: inline-flex;
-    }
-
-    .about-col, .category-col{
-        min-width: 50%;
-        padding: 15px;
-    }
-
-    .location-col-left{
-        min-width: 60%;
-        padding: 20px;
-    }
-
-    .location-col-right{
-        min-width: 40%;
-        padding: 20px;
-    }
-
-    #about-map{
-        padding-left: 50px;
-        padding-top: 10px;
-        float: right;
+        padding: 0px 30px;
     }
 
     .breadcrumb{
         padding: 10px 0px 10px 50px;
     }
 
-    #category h1, #destination h2, #location p, #directions h2, #directions p{
+    #category h1, #destination h2, #destination-details p, #activities h2, #activities p{
         text-align: left;
     }
 
-    #category-img-below{
-        display: none;
+    #category section img{
+        height: auto;
+        width: 100%;
     }
 
-    #category-img-above{
-        display: block;
+    #category section{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
     }
 
-    #image-span{
-        display: inline-flex;
+    #category section:nth-child(even) {
+        flex-direction: column-reverse;
+        padding-right: 0px;
+        padding-left: 10px;
     }
 
-    #image-span img{
+    #category-details{
+        display: flex;
+    }
+
+    #about section{
+        display: flex;
+    }
+
+    #about-map{
+        padding-left: 70px;
+        padding-top: 30px;
+    }
+
+    #about{
+        padding: 0px 30px;
+    }
+
+    #destination-details section{
+        display: flex;
+    }
+
+    #destination-details aside{
+        flex: 0 1 50%;
+        padding: 10px;
+    }
+
+    #destination-details img{
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    #destination{
+        padding: 0px 30px;
+    }
+
+    #gallery-slideshow section img{
         height: 200px;
         width: auto;
+    }
+
+    #gallery-slideshow section a:last-child{
+        display: block;
     }
 }
 
 /* === ANIMATION STYLES === */
 /* SCROLL */
-/* REFERENCE TO SCROLL!!!!!!!!!!!!!!!!!!!*/
 @keyframes circle-anim{
     0%{
       opacity: 1;

@@ -2,28 +2,36 @@
 <html lang="en">
 
 <head>
-    <title>South-East Local | Home</title>
+    <title>Home | South-East Local</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="****************">
+    <meta name="description" content="South-East Local: Feel like a real local when exploring the Redlands">
     <meta name="author" content="Tayah Hoekwater">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to style sheet -->
+    <!-- Link to style sheet and font awesome -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>South-East Local</h1>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+        <nav aria-label="Main">
+            <div id="nav-heading">
+                <button type="button" id="menu-button" aria-expanded="false" aria-label="Navigation"><i
+                        class="fa fa-bars"></i></button>
+                <a id="logo" href="index.html">
+                    <h1>South-East Local</h1>
+                </a>
+            </div>
+            <ul id="flyout-panel" class="flyout-panel-hidden">
+                <li><a aria-current="page" class="active" href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="coastal.html">Coastal</a></li>
                 <li><a href="country.html">Country</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
     <main>
         <section id="landing">
@@ -32,20 +40,23 @@
                     <div class="information">
                         <div class="information-content">
                             <h1>Adventure Awaits!</h1>
-                            <h2>Discover Redlands City's best locations for a family day out! </h2>
-                            <p class="information-text">The Redlands has a range of family fun activities in the area. Located a short 30min drive from the CBD, the South-East offers many magical experiences between the coastal and country side locations. Discover all the go-to spots and hidden gems scattered along the South-East through the categories below</p>
+                            <h2>Discover Redlands City's best locations for a COVID safe family day out! </h2>
+                            <p class="information-text">The Redlands has a range of family fun outdoor activities in the
+                                area. Located a short 30min drive from the CBD, the South-East offers many magical
+                                experiences between the coastal and country side locations. Discover all the go-to spots
+                                and hidden gems scattered along the South-East through the categories below</p>
                             <div class="information-buttons">
-                                <a href="coastal.html" class="information-button">Coastal</a>
+                                <a href="coastal.html" class="information-button">Coast</a>
                                 <a href="country.html" class="information-button">Country</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </li>
             </ul>
             <svg id="scroll" width="52" height="88" viewBox="0 0 52 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1" y="1" width="50" height="86" rx="25" stroke="#354264" stroke-width="2"/>
-                <circle cx="26.5" cy="22.5" r="5.5" fill="#354264"/>
-            </svg>   
+                <rect x="1" y="1" width="50" height="86" rx="25" stroke="#354264" stroke-width="2" />
+                <circle cx="26.5" cy="22.5" r="5.5" fill="#354264" />
+            </svg>
         </section>
         <section id="top-destinations">
             <h1>Our Top Destinations</h1>
@@ -53,52 +64,58 @@
                 <li class="card-item">
                     <div class="card">
                         <a href="images/Lighthouse/cleveland-lighthouse.jpg" target="_blank">
-                            <img class="card-image" src="images/Lighthouse/cleveland-lighthouse.jpg" alt="Cleveland Point Lighthouse">
+                            <img class="card-image" src="images/Lighthouse/cleveland-lighthouse.jpg"
+                                alt="Cleveland Point Lighthouse">
                         </a>
                         <div class="card-content">
                             <h2>Cleveland Lighthouse</h2>
-                            <p class="card-text">Set up a picnic in the evening and enjoy the sunset as it falls upon the historical Cleveland lighthouse...</p>
+                            <p class="card-text">Set up a picnic in the evening and enjoy the sunset as it falls upon
+                                the historical Cleveland lighthouse...</p>
                             <p class="card-location">Cleveland QLD 4163</p>
-                            <a href="cleveland-lighthouse.html" class="card-button">Read More</a>
+                            <a href="cleveland-lighthouse.html" class="card-button">Explore Cleveland</a>
                         </div>
                     </div>
                 </li>
                 <li class="card-item">
                     <div class="card">
-                        <a href="images/Sirromet/sirromet.png" target="_blank">
-                            <img class="card-image" src="images/Sirromet/sirromet.png" alt="Cleveland Point Lighthouse">
+                        <a href="images/Sirromet/sirromet.jpg" target="_blank">
+                            <img class="card-image" src="images/Sirromet/sirromet.jpg" alt="Sirromet Winery">
                         </a>
                         <div class="card-content">
                             <h2>Sirromet Winery</h2>
-                            <p class="card-text">Enjoy eachothers company with a meal, glass of wine and stunning country views...</p>
+                            <p class="card-text">Enjoy eachothers company with a meal, glass of wine and
+                                stunning country views at Sirromet Winery...</p>
                             <p class="card-location">Mount Cotton QLD 4157</p>
-                            <a href="sirromet.html" class="card-button">Read More</a>
+                            <a href="sirromet.html" class="card-button">Explore Sirromet</a>
                         </div>
                     </div>
                 </li>
                 <li class="card-item">
                     <div class="card">
                         <a href="images/Stradbroke/stradbroke-cover.jpg" target="_blank">
-                            <img class="card-image" src="images/Stradbroke/stradbroke-cover.jpg" alt="Cleveland Point Lighthouse">
+                            <img class="card-image" src="images/Stradbroke/stradbroke-cover.jpg"
+                                alt="Stradbroke Island">
                         </a>
                         <div class="card-content">
                             <h2 class="card-title">North Stradbroke Island</h2>
-                            <p class="card-text">Catch a short ferry to spend a day in the sun and sand and discover the indigenous history of "Straddie"...</p>
+                            <p class="card-text">Catch a short ferry to spend a day in the sun and sand and discover the
+                                indigenous history of "Straddie"...</p>
                             <p class="card-location">North Stradbroke Island QLD 4183</p>
-                            <a href="stradbroke.html" class="card-button">Read More</a>
+                            <a href="stradbroke.html" class="card-button">Explore Straddie</a>
                         </div>
                     </div>
                 </li>
                 <li class="card-item">
                     <div class="card">
                         <a href="images/Indigiscapes/indigiscapes-cover.jpg" target="_blank">
-                            <img class="card-image" src="images/Indigiscapes/indigiscapes-cover.jpg" alt="Cleveland Point Lighthouse">
+                            <img class="card-image" src="images/Indigiscapes/indigiscapes-cover.jpg" alt="IndigiScapes">
                         </a>
                         <div class="card-content">
-                            <h2 class="card-title">IndigiScapes</h2>
-                            <p class="card-text">Adventure amongst the wildlife and endulge in the serenity of the Redlands natural environment...</p>
+                            <h2 class="card-title">Indigiscapes</h2>
+                            <p class="card-text">Adventure amongst the wildlife and endulge in the serenity of the
+                                Redlands natural environment...</p>
                             <p class="card-location">Capalaba QLD 4157</p>
-                            <a href="indigiscapes.html" class="card-button">Read More</a>
+                            <a href="indigiscapes.html" class="card-button">Explore Indigiscapes</a>
                         </div>
                     </div>
                 </li>
@@ -118,7 +135,7 @@
 
     <!-- Site Information Footer -->
     <footer class="information-footer">
-        
+
         <div class="footer-column">
             <h3>Details</h3>
             <a>South-East Local</a>
@@ -133,7 +150,7 @@
             <a href="coastal.html">Coastal Locations</a>
             <a href="country.html">Country Locations</a>
         </div>
-        
+
         <div class="footer-column">
             <h3>Contact Us</h3>
             <a href="mailto:help@southeastlocal.com">help@southeastlocal.com</a>
@@ -142,6 +159,9 @@
             <a>Capalaba QLD, 4157</a>
         </div>
     </footer>
+
+    <!-- Link to Javascript -->
+    <script src="nav-javascript.js"></script>
 </body>
 
 </html>

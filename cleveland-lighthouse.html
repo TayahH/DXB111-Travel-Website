@@ -2,40 +2,94 @@
 <html lang="en">
 
 <head>
-    <title>South-East Local | Cleveland Lighthouse</title>
+    <title>Cleveland Lighthouse | South-East Local</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="****************">
+    <meta name="description" content="Discover the Cleveland Lighthouse and it's history">
     <meta name="author" content="Tayah Hoekwater">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to style sheet -->
+    <!-- Link to style sheet and font awesome -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>South-East Local</h1>
-            <ul>
+        <nav aria-label="Main">
+            <div id="nav-heading">
+                <button type="button" id="menu-button" aria-expanded="false" aria-label="Navigation"><i
+                        class="fa fa-bars"></i></button>
+                <a id="logo" href="index.html">
+                    <h1>South-East Local</h1>
+                </a>
+            </div>
+            <ul id="flyout-panel" class="flyout-panel-hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a class="active" href="coastal.html">Coastal</a></li>
+                <li><a aria-current="true" class="active" href="coastal.html">Coastal</a></li>
                 <li><a href="country.html">Country</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="country.html">Coastal</a></li>
-              <li aria-current="page">Cleveland Lighthouse</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coastal.html">Coastal</a></li>
+                <li aria-current="page">Cleveland Lighthouse</li>
             </ul>
         </nav>
-        <div class="category">
+        <div id="destination">
+            <h1>Cleveland Lighthouse</h1>
+            <p>Set up a picnic in the evening and enjoy the sunset as it falls upon the historical Cleveland lighthouse
+            </p>
 
+            <div id="destination-details">
+                <section>
+                    <article>
+                        <h2>A Bit About the Lighthouse</h2>
+                        <p>Wrapped in ocean views of Moreton Bay and the beautiful parkland of Cleveland Point,
+                            Cleveland Lighthouse offers a range of family fun opportunities. Located right at the tip of
+                            Cleveland the Lighthouse, built in 1864, is an exciting landmark of Redlands history.</p>
+                        <br>
+                        <p>Whilst the lighthouse is not open to the general public visitors can still admire the
+                            refurbished form of the unusual hexagonal tower and its history whilst also enjoying the
+                            beauty of the Cleveland coastline.</p>
+                    </article>
+                    <aside>
+                        <a href="images/Lighthouse/cleveland-lighthouse2.jpg" target="_blank"><img
+                                src="images/Lighthouse/cleveland-lighthouse2.jpg" alt="Cleveland Lighthouse"></a>
+                    </aside>
+
+                </section>
+            </div>
+
+
+            <section id="activities">
+                <h2>What to Do?</h2>
+                <p>Clevelands offers a range of activities for the family to enjoy. Discover the history of the
+                    Cleveland Lighthouse, enjoy a picnic along the foreshore, take a stroll along the point and end the
+                    day with a meal from the Lighthouse restaurant. Or admire the views of the waterfront whilst
+                    enjoying a cold scoop of gelato from the Lighthouse Café.</p>
+            </section>
+
+
+            <div id="gallery-slideshow">
+                <h2>Gallery</h2>
+                <section>
+                    <a href="images/Lighthouse/cleveland-lighthouse.jpg" target="_blank"><img
+                            src="images/Lighthouse/cleveland-lighthouse.jpg" alt="Cleveland Lighthouse"></a>
+                    <a href="images/Lighthouse/cleveland-old-jetty.jpg" target="_blank"><img
+                            src="images/Lighthouse/cleveland-old-jetty.jpg"
+                            alt="Old jetty and pelican in Cleveland"></a>
+                    <a href="images/Lighthouse/cleveland-shore.jpg" target="_blank"><img
+                            src="images/Lighthouse/cleveland-shore.jpg" alt="Cleveland shore line"></a>
+                    <a href="images/Lighthouse/cleveland-water.jpg" target="_blank"><img
+                            src="images/Lighthouse/cleveland-water.jpg" alt="Cleveland Ocean View"></a>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -51,7 +105,7 @@
 
     <!-- Site Information Footer -->
     <footer class="information-footer">
-        
+
         <div class="footer-column">
             <h3>Details</h3>
             <a>South-East Local</a>
@@ -66,7 +120,7 @@
             <a href="coastal.html">Coastal Locations</a>
             <a href="country.html">Country Locations</a>
         </div>
-        
+
         <div class="footer-column">
             <h3>Contact Us</h3>
             <a href="mailto:help@southeastlocal.com">help@southeastlocal.com</a>
@@ -75,6 +129,9 @@
             <a>Capalaba QLD, 4157</a>
         </div>
     </footer>
+
+    <!-- Link to Javascript -->
+    <script src="nav-javascript.js"></script>
 </body>
 
 </html>

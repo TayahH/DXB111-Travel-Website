@@ -2,24 +2,31 @@
 <html lang="en">
 
 <head>
-    <title>South-East Local | About Us</title>
+    <title>About Us | South-East Local</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="****************">
+    <meta name="description" content="About page for South-East Local">
     <meta name="author" content="Tayah Hoekwater">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to style sheet -->
+    <!-- Link to style sheet and font awesome -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>South-East Local</h1>
-            <ul>
+        <nav aria-label="Main">
+            <div id="nav-heading">
+                <button type="button" id="menu-button" aria-expanded="false" aria-label="Navigation"><i
+                        class="fa fa-bars"></i></button>
+                <a id="logo" href="index.html">
+                    <h1>South-East Local</h1>
+                </a>
+            </div>
+            <ul id="flyout-panel" class="flyout-panel-hidden">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="about.html">About Us</a></li>
+                <li><a aria-current="page" class="active" href="about.html">About Us</a></li>
                 <li><a href="coastal.html">Coastal</a></li>
                 <li><a href="country.html">Country</a></li>
             </ul>
@@ -28,28 +35,38 @@
     <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li aria-current="page">About Us</li>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">About Us</li>
             </ul>
         </nav>
-        <section id="about">
-            <div class="about-col">
-                <h1>About Us</h1>
-                <h2>Our Mission</h2>
-                <p>At South-East Local we aim to allow people to reconnect with themselves and the people around them. Focusing on the family fun and shared experiences that can be had throughout the Redlands we aspire to create lifelong memories.</p>
-                <p>Showcasing the exciting events and locations throughout Redlands City, South-East local is the one-stop destination to find new family adventures and experiences to have.</p>
-                <h2>Where Are We?</h2>
-                <p>Located in Brisbane's South-East we are only a short 30 minute drive down from Brisbane's CBD, and an hours drive up from the Gold Coast.
-                </p>  
-            </div>
-            <div class="about-col">
+        <div id="about">
+            <section>
+                <article>
+                    <h1>About Us</h1>
+                    <h2>Our Mission</h2>
+                    <p>At South-East Local we aim to allow people to reconnect with themselves and the people around
+                        them. Focusing on the family fun and shared experiences that can be had throughout the Redlands
+                        we aspire to create lifelong memories.</p>
+                    <p>Showcasing the exciting events and locations throughout Redlands City, South-East local is the
+                        one-stop destination to find new family adventures and experiences to have.</p>
+                    <h2>Where Are We?</h2>
+                    <p>Located in Brisbane's South-East we are only a short 30 minute drive down from Brisbane's CBD,
+                        and an hours drive up from the Gold Coast.</p>
+                </article>
+
                 <figure>
                     <img id="about-map" src="images/south-east-map.jpg" alt="Map of South East Queensland">
                     <figcaption>Map of South-East Queensland taken from Google Maps</figcaption>
                 </figure>
-                
-            </div>
-        </section>
+            </section>
+            <h3>References</h3>
+            <ul class="references">
+                <li>Index Hero Image: Rawpixel, T. (2020). [Image]. Retrieved from <a
+                        href="https://www.rawpixel.com/image/2410633/premium-photo-psd-palm-leave-black-and-white-palm-background-shade">rawpixel.com</a>
+                </li>
+                <li>All other non-referenced images used are my own</li>
+            </ul>
+        </div>
     </main>
     <!-- Mailing List Footer -->
     <footer class="mailing-list">
@@ -63,7 +80,7 @@
 
     <!-- Site Information Footer -->
     <footer class="information-footer">
-        
+
         <div class="footer-column">
             <h3>Details</h3>
             <a>South-East Local</a>
@@ -78,7 +95,7 @@
             <a href="coastal.html">Coastal Locations</a>
             <a href="country.html">Country Locations</a>
         </div>
-        
+
         <div class="footer-column">
             <h3>Contact Us</h3>
             <a href="mailto:help@southeastlocal.com">help@southeastlocal.com</a>
@@ -87,6 +104,9 @@
             <a>Capalaba QLD, 4157</a>
         </div>
     </footer>
+
+    <!-- Link to Javascript -->
+    <script src="nav-javascript.js"></script>
 </body>
 
 </html>

@@ -2,25 +2,32 @@
 <html lang="en">
 
 <head>
-    <title>South-East Local | Coastal</title>
+    <title>Coastal | South-East Local</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="****************">
+    <meta name="description" content="Explore the Coastal destinations of the Redlands Coast">
     <meta name="author" content="Tayah Hoekwater">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to style sheet -->
+    <!-- Link to style sheet and font awesome -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>South-East Local</h1>
-            <ul>
+        <nav aria-label="Main">
+            <div id="nav-heading">
+                <button type="button" id="menu-button" aria-expanded="false" aria-label="Navigation"><i
+                        class="fa fa-bars"></i></button>
+                <a id="logo" href="index.html">
+                    <h1>South-East Local</h1>
+                </a>
+            </div>
+            <ul id="flyout-panel" class="flyout-panel-hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a class="active" href="coastal.html">Coastal</a></li>
+                <li><a aria-current="page" class="active" href="coastal.html">Coastal</a></li>
                 <li><a href="country.html">Country</a></li>
             </ul>
         </nav>
@@ -29,62 +36,73 @@
     <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li aria-current="page">Coastal</li>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Coastal</li>
             </ul>
         </nav>
         <div id="category">
-            <div class="category-row">
-                <div class="category-col">
-                    <h1>Discover the Coast</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum varius consequat. Maecenas felis quam, euismod id odio eu, vulputate sollicitudin dui. Aenean eleifend felis dolor. Duis quis sagittis neque, a sollicitudin lectus. Vestibulum malesuada, augue sit amet tempor tristique,</p>
-                    
-                    <a href="images/coastal-surfer.jpg" target="_blank"><img id="category-img" src="images/coastal-surfer.jpg" alt="Surfer sitting on rock"></a>
-                    
-                </div>
-                <div class="category-col">
-                    <a href="images/coastal-ocean.jpg" target="_blank"><img id="category-img-above" src="images/coastal-ocean.jpg" alt="South-East Ocean Photograph"></a>
-                    <h2>Heading</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum varius consequat. Maecenas felis quam, euismod id odio eu, vulputate sollicitudin dui. Aenean eleifend felis dolor. Duis quis sagittis neque, a sollicitudin lectus. Vestibulum malesuada, augue sit amet tempor tristique,</p>    
-                    <a href="images/coastal-ocean.jpg" target="_blank"><img id="category-img-below" src="images/coastal-ocean.jpg" alt="South-East Ocean Photograph"></a>
-                </div>
+            <div id="category-details">
+                <section>
+                    <article>
+                        <h1>Discover the Coast</h1>
+                        <p>The Redlands Coast offers a range of coastal experiences for the whole family to enjoy. Take
+                            the ferry across to Straddle and have a day trip exploring the local culture and crystal
+                            beaches or head to the coastline for an evening picnic looking over the water. </p>
+                    </article>
+                    <a href="images/coastal-surfer.jpg" target="_blank"><img src="images/coastal-surfer.jpg"
+                            alt="Surfer sitting on rock"></a>
+                </section>
+                <section>
+                    <article>
+                        <h2>The Activities</h2>
+                        <p>When exploring the South-East coast there is so much to do as a family. Go fishing,
+                            snorkelling, diving, surfing, stand up paddling or even kayaking across the water. For
+                            people who prefer to stay a little dry the Redlands also offers boating and cruising
+                            opportunities for whale watching or just a fun day out. </p>
+                    </article>
+                    <a href="images/coastal-ocean.jpg" target="_blank"><img src="images/coastal-ocean.jpg"
+                            alt="South-East Ocean Photograph"></a>
+                </section>
             </div>
 
-            <section>
-                <h1>Our Locations</h1>
-                <p>Check out all the beaches, islands and costal locations in the Redlands and the range of activities to do below.</p>    
-                <ul class="cards">
-                    <li class="card-item">
-                        <div class="card">
-                            <a href="images/Lighthouse/cleveland-lighthouse.jpg" target="_blank">
-                                <img class="card-image" src="images/Lighthouse/cleveland-lighthouse.jpg" alt="Cleveland Point Lighthouse">
-                            </a>
-                            <div class="card-content">
-                                <h2>Cleveland Lighthouse</h2>
-                                <p class="card-text">Set up a picnic in the evening and enjoy the sunset as it falls upon the historical Cleveland lighthouse...</p>
-                                <p class="card-location">Cleveland QLD 4163</p>
-                                <a href="cleveland-lighthouse.html" class="card-button">Read More</a>
-                            </div>
+            <h1>Our Locations</h1>
+            <p>Check out all the beaches, islands and costal locations in the Redlands and the range of activities to do
+                below.</p>
+            <ul class="cards">
+                <li class="card-item">
+                    <div class="card">
+                        <a href="images/Lighthouse/cleveland-lighthouse.jpg" target="_blank">
+                            <img class="card-image" src="images/Lighthouse/cleveland-lighthouse.jpg"
+                                alt="Cleveland Point Lighthouse">
+                        </a>
+                        <div class="card-content">
+                            <h2>Cleveland Lighthouse</h2>
+                            <p class="card-text">Set up a picnic in the evening and enjoy the sunset as it falls upon
+                                the historical Cleveland lighthouse...</p>
+                            <p class="card-location">Cleveland QLD 4163</p>
+                            <a href="cleveland-lighthouse.html" class="card-button">Explore Cleveland</a>
                         </div>
-                    </li>
-                    <li class="card-item">
-                        <div class="card">
-                            <a href="images/Stradbroke/stradbroke-cover.jpg" target="_blank">
-                                <img class="card-image" src="images/Stradbroke/stradbroke-cover.jpg" alt="Cleveland Point Lighthouse">
-                            </a>
-                            <div class="card-content">
-                                <h2>North Stradbroke Island</h2>
-                                <p class="card-text">Catch a short ferry to spend a day in the sun and sand and discover the indigenous history of "Straddie"...</p>
-                                <p class="card-location">North Stradbroke Island QLD 4183</p>
-                                <a href="stradbroke.html" class="card-button">Read More</a>
-                            </div>
+                    </div>
+                </li>
+                <li class="card-item">
+                    <div class="card">
+                        <a href="images/Stradbroke/stradbroke-cover.jpg" target="_blank">
+                            <img class="card-image" src="images/Stradbroke/stradbroke-cover.jpg"
+                                alt="Stradbroke Island">
+                        </a>
+                        <div class="card-content">
+                            <h2>North Stradbroke Island</h2>
+                            <p class="card-text">Catch a short ferry to spend a day in the sun and sand and discover the
+                                indigenous history of "Straddie"...</p>
+                            <p class="card-location">North Stradbroke Island QLD 4183</p>
+                            <a href="stradbroke.html" class="card-button">Explore Straddie</a>
                         </div>
-                    </li>
-                </ul>
-            </section>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
-    
+
     <!-- Mailing List Footer -->
     <footer class="mailing-list">
         <form>
@@ -97,7 +115,7 @@
 
     <!-- Site Information Footer -->
     <footer class="information-footer">
-        
+
         <div class="footer-column">
             <h3>Details</h3>
             <a>South-East Local</a>
@@ -112,7 +130,7 @@
             <a href="coastal.html">Coastal Locations</a>
             <a href="country.html">Country Locations</a>
         </div>
-        
+
         <div class="footer-column">
             <h3>Contact Us</h3>
             <a href="mailto:help@southeastlocal.com">help@southeastlocal.com</a>
@@ -121,5 +139,9 @@
             <a>Capalaba QLD, 4157</a>
         </div>
     </footer>
+
+    <!-- Link to Javascript -->
+    <script src="nav-javascript.js"></script>
 </body>
+
 </html>

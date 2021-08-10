@@ -2,40 +2,93 @@
 <html lang="en">
 
 <head>
-    <title>South-East Local | Indigiscapes</title>
+    <title>Indigiscapes | South-East Local</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="****************">
+    <meta name="description"
+        content="Educate yourself on the local flora and fauna of the Redlands with a day at Indigiscapes">
     <meta name="author" content="Tayah Hoekwater">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to style sheet -->
+    <!-- Link to style sheet and font awesome -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>South-East Local</h1>
-            <ul>
+        <nav aria-label="Main">
+            <div id="nav-heading">
+                <button type="button" id="menu-button" aria-expanded="false" aria-label="Navigation"><i
+                        class="fa fa-bars"></i></button>
+                <a id="logo" href="index.html">
+                    <h1>South-East Local</h1>
+                </a>
+            </div>
+            <ul id="flyout-panel" class="flyout-panel-hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="coastal.html">Coastal</a></li>
-                <li><a class="active" href="country.html">Country</a></li>
+                <li><a aria-current="true" class="active" href="country.html">Country</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="country.html">Country</a></li>
-              <li aria-current="page">Indigiscapes</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="country.html">Country</a></li>
+                <li aria-current="page">Indigiscapes</li>
             </ul>
         </nav>
-        <div class="category">
+        <div id="destination">
+            <h1>Indigiscapes</h1>
+            <p>Adventure amongst the wildlife and endulge in the serenity of the Redlands natural environment</p>
 
+            <div id="destination-details">
+                <section>
+                    <article>
+                        <h2>A Bit About Indigiscapes</h2>
+                        <p>Situated on 14.5 hectares of natural bushland Indigiscapes Centre is Redland City Council’s
+                            environmental education centre. Offering native botanical gardens, nurseries, bush trails,
+                            playgrounds and a café socialising in local cuisine.</p>
+                        <br>
+                        <p>Whether you are seeking a relaxing family day out, searching for inspiration for your own
+                            native garden or are passionate about sustainable and environmentally friendly living,
+                            Indigiscapes can educate and inspire you to explore outdoors more whilst assisting in
+                            improving the natural environment.</p>
+                    </article>
+                    <aside>
+                        <a href="images/Indigiscapes/indigiscapes-fan.jpg" target="_blank"><img
+                                src="images/Indigiscapes/indigiscapes-fan.jpg" alt="Indigiscapes scenery"></a>
+                    </aside>
+
+                </section>
+            </div>
+
+
+            <section id="activities">
+                <h2>What to Do?</h2>
+                <p>When visiting Indigiscapes there is so much to do. Relax in the beautiful grounds, go for a walk and
+                    discover the natural beauty of the Redlands Coast, get involved in community groups and activities,
+                    or take a rest and enjoy your surroundings in the café.</p>
+            </section>
+
+
+            <div id="gallery-slideshow">
+                <h2>Gallery</h2>
+                <section>
+                    <a href="images/Indigiscapes/indigiscapes-bridge.jpg" target="_blank"><img
+                            src="images/Indigiscapes/indigiscapes-bridge.jpg" alt="Indigiscapes walking track"></a>
+                    <a href="images/Indigiscapes/indigiscapes-tree.jpg" target="_blank"><img
+                            src="images/Indigiscapes/indigiscapes-tree.jpg" alt="Tree Trunk"></a>
+                    <a href="images/Indigiscapes/indigiscapes-cover.jpg" target="_blank"><img
+                            src="images/Indigiscapes/indigiscapes-cover.jpg" alt="Kookabarra"></a>
+                    <a href="images/Indigiscapes/indigiscapes-rocks.jpg" target="_blank"><img
+                            src="images/Indigiscapes/indigiscapes-rocks.jpg" alt="Rocky ground with water puddles"></a>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -51,7 +104,7 @@
 
     <!-- Site Information Footer -->
     <footer class="information-footer">
-        
+
         <div class="footer-column">
             <h3>Details</h3>
             <a>South-East Local</a>
@@ -66,7 +119,7 @@
             <a href="coastal.html">Coastal Locations</a>
             <a href="country.html">Country Locations</a>
         </div>
-        
+
         <div class="footer-column">
             <h3>Contact Us</h3>
             <a href="mailto:help@southeastlocal.com">help@southeastlocal.com</a>
@@ -75,6 +128,8 @@
             <a>Capalaba QLD, 4157</a>
         </div>
     </footer>
+    <!-- Link to Javascript -->
+    <script src="nav-javascript.js"></script>
 </body>
 
 </html>

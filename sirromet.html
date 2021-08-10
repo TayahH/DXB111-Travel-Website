@@ -2,40 +2,93 @@
 <html lang="en">
 
 <head>
-    <title>South-East Local | Sirromet Winery</title>
+    <title>Sirromet Winery | South-East Local</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="****************">
+    <meta name="description" content="Enjoy a day of relaxation and food at Sirromet Winery">
     <meta name="author" content="Tayah Hoekwater">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to style sheet -->
+    <!-- Link to style sheet and font awesome -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>South-East Local</h1>
-            <ul>
+        <nav aria-label="Main">
+            <div id="nav-heading">
+                <button type="button" id="menu-button" aria-expanded="false" aria-label="Navigation"><i
+                        class="fa fa-bars"></i></button>
+                <a id="logo" href="index.html">
+                    <h1>South-East Local</h1>
+                </a>
+            </div>
+            <ul id="flyout-panel" class="flyout-panel-hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="coastal.html">Coastal</a></li>
-                <li><a class="active" href="country.html">Country</a></li>
+                <li><a aria-current="true" class="active" href="country.html">Country</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="country.html">Country</a></li>
-              <li aria-current="page">Sirromet Winery</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="country.html">Country</a></li>
+                <li aria-current="page">Sirromet Winery</li>
             </ul>
         </nav>
-        <div class="category">
+        <div id="destination">
+            <h1>Sirromet Winery</h1>
+            <p>Enjoy eachothers company with a meal, glass of wine and stunning country views</p>
 
+            <div id="destination-details">
+                <section>
+                    <article>
+                        <h2>A Bit About Sirromet</h2>
+                        <p>Sirromet is a family owned and operated winery located within Mount Cotton. With state of the
+                            art facilities Sirromet offers food and wine lovers as well as the whole family the ultimate
+                            experience. With a range of activities and eating opportunities you can be guaranteed a fun
+                            time. Along side the usual activities Sirromet often hosts external events at their venue.
+                            Weekend
+                            park runs and the “cars and coffee” events, as well as their renowned “Day on the Green”
+                            where musicians from around the globe come to perform.</p>
+                    </article>
+                    <aside>
+                        <a href="images/Sirromet/sirromet-wallaby.jpeg" target="_blank"><img
+                                src="images/Sirromet/sirromet-wallaby.jpeg" alt="Wallaby at Sirromet Winery"></a>
+                    </aside>
+
+                </section>
+            </div>
+
+
+            <section id="activities">
+                <h2>What to Do?</h2>
+                <p>Sirromet hosts numerous activities for everyone to enjoy. With their fine dining restaurant the whole
+                    family can relax with a meal whilst the adults enjoy a luxury wine. For those old enough Sirromet
+                    offers wine tasting tours, however if looking for a day out with the whole family they offer Super
+                    Golf, a modified form of golf with oversized clubs and balls to ensure a fun day of entertainment.
+                </p>
+            </section>
+
+
+            <div id="gallery-slideshow">
+                <h2>Gallery</h2>
+                <section>
+                    <a href="images/Sirromet/sirromet-lookout.jpg" target="_blank"><img
+                            src="images/Sirromet/sirromet-lookout.jpg" alt="Sirromet Lookout Point"></a>
+                    <a href="images/Sirromet/sirromet-lavender.jpg" target="_blank"><img
+                            src="images/Sirromet/sirromet-lavender.jpg" alt="Sirromet Lavender Hill"></a>
+                    <a href="images/Sirromet/sirromet-celler-door.jpg" target="_blank"><img
+                            src="images/Sirromet/sirromet-celler-door.jpg" alt="Sirromet Celler Door Cafe"></a>
+                    <a href="images/Sirromet/sirromet-hill.jpg" target="_blank"><img
+                            src="images/Sirromet/sirromet-hill.jpg" alt="Hill at Sirromet"></a>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -51,7 +104,7 @@
 
     <!-- Site Information Footer -->
     <footer class="information-footer">
-        
+
         <div class="footer-column">
             <h3>Details</h3>
             <a>South-East Local</a>
@@ -66,7 +119,7 @@
             <a href="coastal.html">Coastal Locations</a>
             <a href="country.html">Country Locations</a>
         </div>
-        
+
         <div class="footer-column">
             <h3>Contact Us</h3>
             <a href="mailto:help@southeastlocal.com">help@southeastlocal.com</a>
@@ -75,6 +128,8 @@
             <a>Capalaba QLD, 4157</a>
         </div>
     </footer>
+    <!-- Link to Javascript -->
+    <script src="nav-javascript.js"></script>
 </body>
 
 </html>

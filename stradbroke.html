@@ -2,57 +2,95 @@
 <html lang="en">
 
 <head>
-    <title>South-East Local | North Stradbroke Island</title>
+    <title>North Stradbroke Island | South-East Local</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="****************">
+    <meta name="description" content="Take a ride to Straddie and experience the local culture and history.">
     <meta name="author" content="Tayah Hoekwater">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to style sheet -->
+    <!-- Link to style sheet and font awesome -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>South-East Local</h1>
-            <ul>
+        <nav aria-label="Main">
+            <div id="nav-heading">
+                <button type="button" id="menu-button" aria-expanded="false" aria-label="Navigation"><i
+                        class="fa fa-bars"></i></button>
+                <a id="logo" href="index.html">
+                    <h1>South-East Local</h1>
+                </a>
+            </div>
+            <ul id="flyout-panel" class="flyout-panel-hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a class="active" href="coastal.html">Coastal</a></li>
-                <li><a href="country.html">Country</a></li>
+                <li><a aria-current="true" href="country.html">Country</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="country.html">Coastal</a></li>
-              <li aria-current="page">North Stradbroke Island</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coastal.html">Coastal</a></li>
+                <li aria-current="page">North Stradbroke Island</li>
             </ul>
         </nav>
         <div id="destination">
             <h1>North Stradbroke Island</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum varius consequat. </p>    
-            <div id="location">
-                <section class="location-row">
-                    <div class="location-col-left">
-                        <h2>What to do?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum varius consequat. Maecenas felis quam, euismod id odio eu, vulputate sollicitudin dui. Aenean eleifend felis dolor. Duis quis sagittis neque, a sollicitudin lectus. Vestibulum malesuada, augue sit amet tempor tristique, Phasellus interdum varius consequat. Maecenas felis quam, euismod id odio eu, vulputate sollicitudin dui. Aenean eleifend felis dolor. Duis quis sagittis neque, a sollicitudin lectus. Vestibulum malesuada, augue sit amet tempor tristique,</p>
-                    </div>
-                    <div class="location-col-right">
-                        <a href="images/Stradbroke/stradbroke-boardwalk.jpg" target="_blank"><img id="location-img" src="images/Stradbroke/stradbroke-boardwalk.jpg" alt="Stradbroke Island North Gorge Walk"></a>
-                    </div>
-                </section>  
+            <p>Catch a short ferry to spend a day in the sun and sand and discover the indigenous history of "Straddie"
+            </p>
+
+            <div id="destination-details">
+                <section>
+                    <article>
+                        <h2>A Bit About 'Straddie'</h2>
+                        <p>‘Straddie’ is the world’s second largest sand island located 30km southeast of Brisbane. The
+                            island offers endless cultural and historical experiences to learn and discover the
+                            traditional owners of the land and their connection to the land and sea of the sub-tropical
+                            island. </p>
+                        <br>
+                        <p>Alongside the traditional adventures North Stradbroke Island offer beautiful beaches,
+                            national parks and gorges for the whole family to experience. The diverse range of
+                            activities is perfect to satisfy any visitor to the island.</p>
+                    </article>
+                    <aside>
+                        <a href="images/Stradbroke/stradbroke-boardwalk.jpg" target="_blank"><img
+                                src="images/Stradbroke/stradbroke-boardwalk.jpg"
+                                alt="Stradbroke Island North Gorge Walk"></a>
+                    </aside>
+
+                </section>
             </div>
-            <section id="directions">
-                <h2>How to get there?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum varius consequat. Maecenas felis quam, euismod id odio eu, vulputate sollicitudin dui. Aenean eleifend felis dolor. Duis quis sagittis neque, a sollicitudin lectus. Vestibulum malesuada, augue sit amet tempor tristique,</p>              
-                <h2>Gallery</h2>
+
+
+            <section id="activities">
+                <h2>What to Do?</h2>
+                <p>There are many incredible activities you can do at ‘Straddie’. Go for a surf in the waters of Point
+                    Lookout, discover the local wildlife to find turtles, rays, dolphins, birds, koalas and wallabies or
+                    dive with the surrounding sea life to experience an entirely new world. No matter what you choose to
+                    do with your ‘Straddie’ itinerary you are guaranteed to have a memorable family experience.</p>
             </section>
+
+
+            <div id="gallery-slideshow">
+                <h2>Gallery</h2>
+                <section>
+                    <a href="images/Stradbroke/stradbroke-rocks.jpg" target="_blank"><img
+                            src="images/Stradbroke/stradbroke-rocks.jpg" alt="Stradbroke Island Rock Shore Edge"></a>
+                    <a href="images/Stradbroke/stradbroke-surfer.jpg" target="_blank"><img
+                            src="images/Stradbroke/stradbroke-surfer.jpg" alt="Stradbroke surfer"></a>
+                    <a href="images/Stradbroke/stradbroke-cover.jpg" target="_blank"><img
+                            src="images/Stradbroke/stradbroke-cover.jpg" alt="Stradbroke Boardwalk View"></a>
+                    <a href="images/Stradbroke/stradbroke-view.jpg" target="_blank"><img
+                            src="images/Stradbroke/stradbroke-view.jpg" alt="Stradbroke Ocean View"></a>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -68,7 +106,7 @@
 
     <!-- Site Information Footer -->
     <footer class="information-footer">
-        
+
         <div class="footer-column">
             <h3>Details</h3>
             <a>South-East Local</a>
@@ -83,7 +121,7 @@
             <a href="coastal.html">Coastal Locations</a>
             <a href="country.html">Country Locations</a>
         </div>
-        
+
         <div class="footer-column">
             <h3>Contact Us</h3>
             <a href="mailto:help@southeastlocal.com">help@southeastlocal.com</a>
@@ -92,6 +130,8 @@
             <a>Capalaba QLD, 4157</a>
         </div>
     </footer>
+    <!-- Link to Javascript -->
+    <script src="nav-javascript.js"></script>
 </body>
 
 </html>

@@ -2,85 +2,108 @@
 <html lang="en">
 
 <head>
-    <title>South-East Local | Country</title>
+    <title>Country | South-East Local</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="****************">
+    <meta name="description" content="Create a connection with nature by exploring the Redlands country side">
     <meta name="author" content="Tayah Hoekwater">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to style sheet -->
+    <!-- Link to style sheet and font awesome -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>South-East Local</h1>
-            <ul>
+        <nav aria-label="Main">
+            <div id="nav-heading">
+                <button type="button" id="menu-button" aria-expanded="false" aria-label="Navigation"><i
+                        class="fa fa-bars"></i></button>
+                <a id="logo" href="index.html">
+                    <h1>South-East Local</h1>
+                </a>
+            </div>
+            <ul id="flyout-panel" class="flyout-panel-hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="coastal.html">Coastal</a></li>
-                <li><a class="active" href="country.html">Country</a></li>
+                <li><a aria-current="page" class="active" href="country.html">Country</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li aria-current="page">Country</li>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Country</li>
             </ul>
         </nav>
         <div id="category">
-            <div class="category-row">
-                <div class="category-col">
-                    <h1>Explore the Country</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum varius consequat. Maecenas felis quam, euismod id odio eu, vulputate sollicitudin dui. Aenean eleifend felis dolor. Duis quis sagittis neque, a sollicitudin lectus. Vestibulum malesuada, augue sit amet tempor tristique,</p>
-                    <a href="images/country-person.jpg" target="_blank"><img id="category-img" src="images/country-person.jpg" alt="Girl sitting on log in the bush"></a>
-                    
-                </div>
-                <div class="category-col">
-                    <a href="images/country-wallaby.jpg" target="_blank"><img id="category-img-above" src="images/country-wallaby.jpg" alt="Small Wallaby looking at the camera"></a>
-                    <h2>The Wildlife</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum varius consequat. Maecenas felis quam, euismod id odio eu, vulputate sollicitudin dui. Aenean eleifend felis dolor. Duis quis sagittis neque, a sollicitudin lectus. Vestibulum malesuada, augue sit amet tempor tristique,</p>    
-                    <a href="images/country-wallaby.jpg" target="_blank"><img id="category-img-below" src="images/country-wallaby.jpg" alt="Small Wallaby looking at the camera"></a>
-                </div>
-            </div>  
+            <div id="category-details">
+                <section>
+                    <article>
+                        <h1>Explore the Country</h1>
+                        <p>If you’re planning a visit to the South-East you can’t pass up an experience to explore the
+                            natural beauty of the countryside. Embark on a bushland adventure through relaxing bush
+                            walks, mountain bike tracks, horse riding trails and other activities to rekindle your
+                            connection with nature.</p>
+                    </article>
 
-            <section>
-                <h1>Our Locations</h1>
-                <p>Explore the natural beauty of the Redlands bushland and hinterland areas, connecting with the local wildlife and the native environment.</p>    
-                <ul class="cards">
-                    <li class="card-item">
-                        <div class="card">
-                            <a href="images/Sirromet/sirromet.png" target="_blank">
-                                <img class="card-image" src="images/Sirromet/sirromet.png" alt="Cleveland Point Lighthouse">
-                            </a>
-                            <div class="card-content">
-                                <h2>Sirromet Winery</h2>
-                                <p class="card-text">Enjoy eachothers company with a meal, glass of wine and stunning country views...</p>
-                                <p class="card-location">Mount Cotton QLD 4157</p>
-                                <a href="sirromet.html" class="card-button">Read More</a>
-                            </div>
+                    <a href="images/country-person.jpg" target="_blank"><img src="images/country-person.jpg"
+                            alt="Girl sitting on log in the bush"></a>
+
+                </section>
+                <section>
+                    <article>
+                        <h2>The Wildlife</h2>
+                        <p>The Redlands Coast is inhabited by a diverse range of local wildlife living amongst the
+                            community. By exploring the South-East, visitors can immerse themselves in the local
+                            environment, discovering over 170 different species of flora and fauna thriving in the local
+                            area.
+                        </p>
+                    </article>
+
+                    <a href="images/country-wallaby.jpg" target="_blank"><img src="images/country-wallaby.jpg"
+                            alt="Small Wallaby looking at the camera"></a>
+                </section>
+            </div>
+
+            <h1>Our Locations</h1>
+            <p>Explore the natural beauty of the Redlands bushland and hinterland areas, connecting with the
+                local
+                wildlife and the native environment.</p>
+            <ul class="cards">
+                <li class="card-item">
+                    <div class="card">
+                        <a href="images/Sirromet/sirromet.jpg" target="_blank">
+                            <img class="card-image" src="images/Sirromet/sirromet.jpg" alt="Sirromet Winery">
+                        </a>
+                        <div class="card-content">
+                            <h2>Sirromet Winery</h2>
+                            <p class="card-text">Enjoy eachothers company with a meal, glass of wine and
+                                stunning country views at Sirromet Winery...</p>
+                            <p class="card-location">Mount Cotton QLD 4157</p>
+                            <a href="sirromet.html" class="card-button">Explore Sirromet</a>
                         </div>
-                    </li>
-                    <li class="card-item">
-                        <div class="card">
-                            <a href="images/Indigiscapes/indigiscapes-cover.jpg" target="_blank">
-                                <img class="card-image" src="images/Indigiscapes/indigiscapes-cover.jpg" alt="Cleveland Point Lighthouse">
-                            </a>
-                            <div class="card-content">
-                                <h2 class="card-title">IndigiScapes</h2>
-                                <p class="card-text">Adventure amongst the wildlife and endulge in the serenity of the Redlands natural environment...</p>
-                                <p class="card-location">Capalaba QLD 4157</p>
-                                <a href="indigiscapes.html" class="card-button">Read More</a>
-                            </div>
+                    </div>
+                </li>
+                <li class="card-item">
+                    <div class="card">
+                        <a href="images/Indigiscapes/indigiscapes-cover.jpg" target="_blank">
+                            <img class="card-image" src="images/Indigiscapes/indigiscapes-cover.jpg" alt="IndigiScapes">
+                        </a>
+                        <div class="card-content">
+                            <h2 class="card-title">Indigiscapes</h2>
+                            <p class="card-text">Adventure amongst the wildlife and endulge in the serenity
+                                of the Redlands natural environment...</p>
+                            <p class="card-location">Capalaba QLD 4157</p>
+                            <a href="indigiscapes.html" class="card-button">Explore Indigiscapes</a>
                         </div>
-                    </li>
-                </ul>
-            </section>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
 
@@ -96,7 +119,7 @@
 
     <!-- Site Information Footer -->
     <footer class="information-footer">
-        
+
         <div class="footer-column">
             <h3>Details</h3>
             <a>South-East Local</a>
@@ -111,7 +134,7 @@
             <a href="coastal.html">Coastal Locations</a>
             <a href="country.html">Country Locations</a>
         </div>
-        
+
         <div class="footer-column">
             <h3>Contact Us</h3>
             <a href="mailto:help@southeastlocal.com">help@southeastlocal.com</a>
@@ -120,6 +143,9 @@
             <a>Capalaba QLD, 4157</a>
         </div>
     </footer>
+
+    <!-- Link to Javascript -->
+    <script src="nav-javascript.js"></script>
 </body>
 
 </html>
